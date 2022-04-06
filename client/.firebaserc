@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lixil-americas2-dev": {
+      "hosting": {
+        "pos-planner": [
+          "lixil-americas2-dev"
+        ]
+      }
+    }
+  }
+}
