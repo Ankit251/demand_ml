@@ -8,17 +8,13 @@ import { AuthService } from './shared/services/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'pos-planner';
+  title = 'Demand ML';
   isLoggedIn: boolean = false;
   constructor(
     private readonly authService: AuthService,
     private readonly router: Router) { }
 
   ngOnInit() {
-    if (localStorage.getItem('isLoggedIn') == 'true') {
-      this.isLoggedIn = true;
-    } else {
-      this.isLoggedIn = false;
-    }
+
   }
 }
