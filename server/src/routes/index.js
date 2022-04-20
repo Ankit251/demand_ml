@@ -3,6 +3,8 @@ var router = express.Router();
 const path = require("path");
 var data = require("./data");
 
+var ind = require("./../services/bigquery/index")
+
 /* GET home page. */
 router.get("/", function (req, res, next) {
   let indexFile = path.join(__dirname, "../../static/index.html");
